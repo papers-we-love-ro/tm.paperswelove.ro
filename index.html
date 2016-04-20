@@ -1,28 +1,91 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-{% include header.html %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    
+        <title>Timisoara</title>
+    
+
+    <meta name="description" content="">
+
+    
+
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        
+<div class="header">
+    <div class="title">
+        <h1>Timisoara</h1>
+        <div class="subtitle">
+            <h2>Papers We Love</h2>
+        </div>
+    </div>
+    <div class="navigation">
+        <ul>
+            
+            <li>
+                <a href="/">home</a>
+            </li>
+            
+            <li>
+                <a href="http://www.meetup.com/Papers-We-Love-Timisoara/">meetup</a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/paperswelovetimisoara/">facebook</a>
+            </li>
+            
+            <li>
+                <a href="https://github.com/papers-we-love-ro/tm.paperswelove.ro/">github</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
 
 <div class="portfolio">
-    <h1>Web Design:</h1>
+    <h1>Announcements</h1>
     <ul>
-        {% for websites in site.data.websites %}
+        
         <li>
-            <a href="{{ websites.url }}">{{ websites.url }}</a>
+            <a href="https://meetup.com/"><h1>New meetup</h1></a>
+            <p> A new meetup will be announced soon! </p>
         </li>
-        {% endfor %}
+        
     </ul>
 </div>
 
 
 <div class="blog">
-    <h1>Blog Posts:</h1>
+    <h1>Past Meetups</h1>
     <ul>
-        {% for post in site.posts %}
-        <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
+        
     </ul>
 </div>
+
+    </div>
+
+</body>
+
+</html>
