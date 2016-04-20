@@ -1,11 +1,18 @@
 
 <div class="header">
-    <h1>{{ site.name }}</h1>
-    <ul>
-        {% for item in site.data.navigation %}
-        <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="title">
+        <h1>{{ site.name }}</h1>
+        <div class="subtitle">
+            <h2>{{ site.subtitle }}</h2>
+        </div>
+    </div>
+    <div class="navigation">
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

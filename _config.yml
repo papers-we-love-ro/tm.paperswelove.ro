@@ -1,3 +1,6 @@
+name: "Timisoara"
+subtitle: "paperswelove"
+subtitle: "Papers We Love"
 url: https://tm.paperswelove.ro
 baseurl: ''
 enforce_ssl: tm.paperswelove.ro

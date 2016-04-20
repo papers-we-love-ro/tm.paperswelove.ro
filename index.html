@@ -5,11 +5,12 @@ layout: default
 {% include header.html %}
 
 <div class="portfolio">
-    <h1>Web Design:</h1>
+    <h1>Announcements</h1>
     <ul>
-        {% for websites in site.data.websites %}
+        {% for post in site.data.announcements %}
         <li>
-            <a href="{{ websites.url }}">{{ websites.url }}</a>
+            <a href="{{ post.link }}"><h1>{{ post.title }}</h1></a>
+            <p> {{ post.description }} </p>
         </li>
         {% endfor %}
     </ul>
@@ -17,7 +18,7 @@ layout: default
 
 
 <div class="blog">
-    <h1>Blog Posts:</h1>
+    <h1>Past Meetups</h1>
     <ul>
         {% for post in site.posts %}
         <li>
