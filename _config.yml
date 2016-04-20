@@ -20,7 +20,7 @@ permalink: pretty
 
 # Settings for deploy rake task
 username:        papers-we-love-ro
-repo:            paperswelove.ro
+repo:            tm.paperswelove.ro
 branch:          source
 relative_source: ../tm.paperswelove.ro/
 destination:     ../tm.paperswelove.ro-pages/
