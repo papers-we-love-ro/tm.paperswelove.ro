@@ -1,24 +1,28 @@
-# My variables
-name: Micah Cowell
-description: cool web design
-google_analytics: UA-39119359-12
-google_verification: null
-
-
-# File management
-include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
-
-
-# Sass
+url: https://tm.paperswelove.ro
+baseurl: ''
+enforce_ssl: tm.paperswelove.ro
+safe: true
+lsi: false
 sass:
-  style: :compressed
-  sass_dir: _sass
+    style: compressed
 
+compass:
+  logo: "/images/logo.png"
+  author: "Papers We Love Romania"
+  tagline: "Community built around reading, discussing and learning more about academic computer science papers."
+  include_content: true
+  include_analytics: false
 
-# Markdown
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
 highlighter: rouge
+
+permalink: pretty
+
+# Settings for deploy rake task
+username:        papers-we-love-ro
+repo:            paperswelove.ro
+branch:          source
+relative_source: ../tm.paperswelove.ro/
+destination:     ../tm.paperswelove.ro-pages/
+production_url:  https://tm.paperswelove.ro
+source_url:      https://github.com/papers-we-love-ro/tm.paperswelove.ro
